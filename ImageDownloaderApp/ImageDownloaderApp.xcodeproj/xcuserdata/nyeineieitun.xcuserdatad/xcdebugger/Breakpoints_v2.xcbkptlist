@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9618A2EC-8AEC-4A12-869B-326F56CFDF1D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageDownloaderApp/ImageListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "loadSampleImages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - c0b443be05fd5df1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19">
+               </Location>
+               <Location
+                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - 3c1d079b88328a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19">
+               </Location>
+               <Location
+                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - 5625a17c5051fa03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
