@@ -15,6 +15,7 @@ This project demonstrates the following key concepts:
 * Show a loading progress bar for each image while downloading.
 * Cache images with thread-safe actor to improve performance.
 * Handle proper memory management to avoid memory leaks.
+* Integrate AI-powered image search for the downloaded Images to allow user to search using keywords like "human", "tree", "car", etc.
 
 # Requirements
 * iOS 15.0+
@@ -78,12 +79,6 @@ Images are cached to avoid re-downloading them every time.
 ### Progress Handling:  
 The download progress for each image is updated dynamically using a closure. This allows real-time feedback to the user.
 
-### Future Improvements
-Implement image retries if a download fails.
-Add support for custom image caching strategies (e.g., disk cache).
-Add a detailed error handling mechanism for network issues.
-Enhance the UI with animations when images are loaded or failed to load.
-
 ### Technologies Used
 Swift 5.5+  
 SwiftUI  
@@ -91,6 +86,9 @@ Combine for reactive programming.
 URLSession for networking.  
 Concurrency: TaskGroup, CheckedContinuation, actor, async/await.  
 NSCache for caching images.
+Core ML for running a pre-trained image classification model on-device.
+Vision for easily work with Core ML models for images.
+MLModel – Likely use Apple’s MobileNetV2 or similar for classification.
 
 ### Author  
 Nyein  
