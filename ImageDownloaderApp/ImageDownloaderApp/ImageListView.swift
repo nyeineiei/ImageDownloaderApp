@@ -25,14 +25,14 @@ struct ImageListView: View {
                                         .scaledToFit()
                                         .frame(height: 200)
                                         .cornerRadius(12)
+                                } else {
+                                    let urlString = "https://picsum.photos/2000/1500?random=\(index + 1)"
+                                    ProgressView(value: viewModel.imageProgress[urlString] ?? 0, total: 1)
+                                        .progressViewStyle(LinearProgressViewStyle())
+                                        .accentColor(.blue)
+                                        .frame(height: 5)
+                                        .padding(.top, 8)
                                 }
-                                
-                                let urlString = "https://picsum.photos/2000/1500?random=\(index + 1)"
-                                ProgressView(value: viewModel.imageProgress[urlString] ?? 0, total: 1)
-                                    .progressViewStyle(LinearProgressViewStyle())
-                                    .accentColor(.blue)
-                                    .frame(height: 5)
-                                    .padding(.top, 8)
                             }
                         }
                     }.padding()

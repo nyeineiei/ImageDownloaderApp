@@ -22,11 +22,9 @@ class ImageListViewModel: ObservableObject {
         let progressHandler: (URL, Double) -> Void = { url, progress in
             // Update progress for each image URL
             DispatchQueue.main.async {
-                if abs((self.imageProgress[url.absoluteString] ?? 0) - progress) > 0.0005 {
-                    withAnimation {
-                        self.imageProgress[url.absoluteString] = progress
-                        print("Progress for \(url.absoluteString): \(progress)")
-                    }
+                withAnimation {
+                    self.imageProgress[url.absoluteString] = progress
+                    print("Progress for \(url.absoluteString): \(progress)")
                 }
             }
         }
