@@ -11,7 +11,7 @@ import UIKit
 class ImageDownloadManager {
     let cache = ImageCacheActor()
 
-    func fetchImages(from urls: [URL]) async -> [UIImage] {
+    func fetchImages(from urls: [URL], progressHandler: @escaping (URL, Double) -> Void) async -> [UIImage] {
         var results: [UIImage] = []
 
         await withTaskGroup(of: UIImage?.self) { group in
@@ -21,6 +21,10 @@ class ImageDownloadManager {
                         return cached
                     }
                     let downloader = ImageDownloader()
+                    downloader.onProgress = { progress in
+                        // Pass the progress back to the view model
+                        progressHandler(url, progress)
+                    }
                     do {
                         let image = try await downloader.downloadImage(from: url)
                         await self.cache.set(image, forKey: url.absoluteString)

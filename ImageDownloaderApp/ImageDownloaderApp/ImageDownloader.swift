@@ -32,7 +32,7 @@ class ImageDownloader: NSObject, URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64,
                     totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         let progress = Double(totalBytesWritten) / Double(totalBytesExpectedToWrite)
-        onProgress?(progress)
+        onProgress?(progress) // Notify the progress to the ImageListViewModel.
     }
 
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask,

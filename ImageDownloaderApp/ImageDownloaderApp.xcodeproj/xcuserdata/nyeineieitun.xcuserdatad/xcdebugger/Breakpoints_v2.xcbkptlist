@@ -7,61 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B"
+            uuid = "D5709E26-0F82-4E8C-A5C7-9D4C7D6E9401"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageDownloaderApp/ImageListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22D3FE0E-61BC-43DE-BFDC-49EDFA848ABA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageDownloaderApp/ImageListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "loadSampleImages()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - c0b443be05fd5df1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
-                  moduleName = "ImageDownloaderApp.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-               <Location
-                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - 3c1d079b88328a6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
-                  moduleName = "ImageDownloaderApp.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-               <Location
-                  uuid = "0412DF95-DBAC-4F10-9492-45E1CFE3EB4B - 5625a17c5051fa03"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #2 () async -&gt; () in ImageDownloaderApp.ImageListViewModel.loadSampleImages() -&gt; ()"
-                  moduleName = "ImageDownloaderApp.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/ImageListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
