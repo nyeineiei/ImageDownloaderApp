@@ -11,9 +11,13 @@ import SwiftUI
 // MARK: - ImageListViewModel (Calls downloader, updates UI state)
 @MainActor
 class ImageListViewModel: ObservableObject {
-    @Published var images: [UIImage] = []
+    @Published var classifiedImages: [String: (UIImage, String?)] = [:]
     @Published var imageProgress: [String: Double] = [:]  //Dictionary to hold progress per image
-    let manager = ImageDownloadManager()
+    private let manager: ImageDownloadManager
+    
+    init(manager: ImageDownloadManager = ImageDownloadManager(classifier: ImageClassifier())) {
+        self.manager = manager
+    }
 
     func loadSampleImages() {
         let urls = (1...10).compactMap { URL(string: "https://picsum.photos/2000/1500?random=\($0)") }
@@ -22,7 +26,7 @@ class ImageListViewModel: ObservableObject {
         let progressHandler: (URL, Double) -> Void = { url, progress in
             // Update progress for each image URL
             DispatchQueue.main.async {
-                withAnimation {
+                withAnimation() {
                     self.imageProgress[url.absoluteString] = progress
                     print("Progress for \(url.absoluteString): \(progress)")
                 }
@@ -31,7 +35,13 @@ class ImageListViewModel: ObservableObject {
         
         Task {
             let downloaded = await manager.fetchImages(from: urls, progressHandler: progressHandler)
-            self.images = downloaded
+            for (image, label) in downloaded {
+                // Use absoluteString as key
+                if let index = downloaded.firstIndex(where: { $0.0 == image }) {
+                    let urlKey = urls[index].absoluteString
+                    self.classifiedImages[urlKey] = (image, label)
+                }
+            }
         }
     }
 }

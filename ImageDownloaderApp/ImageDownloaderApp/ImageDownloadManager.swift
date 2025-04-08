@@ -10,34 +10,44 @@ import UIKit
 // MARK: - ImageDownloadManager (Manages parallel downloads using TaskGroup)
 class ImageDownloadManager {
     let cache = ImageCacheActor()
+    private let classifier: ImageClassifying
 
-    func fetchImages(from urls: [URL], progressHandler: @escaping (URL, Double) -> Void) async -> [UIImage] {
-        var results: [UIImage] = []
+    init(classifier: ImageClassifying) {
+        self.classifier = classifier
+    }
 
-        await withTaskGroup(of: UIImage?.self) { group in
+    func fetchImages(from urls: [URL], progressHandler: @escaping (URL, Double) -> Void) async -> [(UIImage, String?)] {
+        var results: [(UIImage, String?)] = []
+
+        await withTaskGroup(of: (UIImage, String?)?.self) { group in
             for url in urls {
                 group.addTask {
                     if let cached = await self.cache.get(forKey: url.absoluteString) {
-                        return cached
+                        // You might want to re-classify cached images too if not already done
+                        let label = try? await self.classifier.classify(cached)
+                        return (cached, label)
                     }
+
                     let downloader = ImageDownloader()
                     downloader.onProgress = { progress in
-                        // Pass the progress back to the view model
                         progressHandler(url, progress)
                     }
+
                     do {
                         let image = try await downloader.downloadImage(from: url)
                         await self.cache.set(image, forKey: url.absoluteString)
-                        return image
+                        let label = try? await self.classifier.classify(image)
+                        return (image, label)
                     } catch {
+                        // If download failed, don't add to the result
                         return nil
                     }
                 }
             }
 
-            for await image in group {
-                if let img = image {
-                    results.append(img)
+            for await result in group {
+                if let (image, label) = result {
+                    results.append((image, label))
                 }
             }
         }
