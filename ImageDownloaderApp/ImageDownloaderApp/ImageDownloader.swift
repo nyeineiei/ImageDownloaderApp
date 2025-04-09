@@ -19,15 +19,6 @@ class ImageDownloader: NSObject, URLSessionDownloadDelegate {
             session.downloadTask(with: url).resume()
         }
     }
-
-    /// TODO: Add the progress closure
-//    let downloader = ImageDownloader()
-//    downloader.onProgress = { progress in
-//        // Update progress UI (e.g., ProgressView or UIProgressView)
-//        DispatchQueue.main.async {
-//            self.progressBar.progress = Float(progress)
-//        }
-//    }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64,
                     totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
