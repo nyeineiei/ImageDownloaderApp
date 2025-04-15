@@ -11,7 +11,11 @@ import SwiftUI
 struct ImageDownloaderAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ImageListView()
+            ImageListView {
+                let classifier = ImageClassifier()
+                let manager = ImageDownloadManager(classifier: classifier)
+                return ImageListViewModel(manager: manager)
+            }
         }
     }
 }

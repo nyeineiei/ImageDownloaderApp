@@ -10,12 +10,12 @@ import SwiftUI
 
 // MARK: - ImageListViewModel (Calls downloader, updates UI state)
 @MainActor
-class ImageListViewModel: ObservableObject {
+class ImageListViewModel: ImageListViewModelInterface {
     @Published var classifiedImages: [String: (UIImage, String?)] = [:]
     @Published var imageProgress: [String: Double] = [:]  //Dictionary to hold progress per image
-    private let manager: ImageDownloadManager
+    private let manager: ImageDownloadManagerInterface
     
-    init(manager: ImageDownloadManager = ImageDownloadManager(classifier: ImageClassifier())) {
+    init(manager: ImageDownloadManagerInterface) {
         self.manager = manager
     }
 

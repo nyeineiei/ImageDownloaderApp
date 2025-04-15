@@ -8,9 +8,14 @@
 //SwiftUI or UIKit list of images with progress bars
 import SwiftUI
 
-struct ImageListView: View {
-    @StateObject private var viewModel = ImageListViewModel()
+struct ImageListView<ViewModel: ImageListViewModelInterface>: View {
+    @StateObject private var viewModel: ViewModel
 
+    // Inject with a factory closure to control lifecycle
+    init(viewModelFactory: @escaping () -> ViewModel) {
+        _viewModel = StateObject(wrappedValue: viewModelFactory())
+    }
+    
     // Use the same URLs used in ViewModel
     private let urls = (1...10).compactMap { URL(string: "https://picsum.photos/2000/1500?random=\($0)") }
 
@@ -50,7 +55,22 @@ struct ImageListView: View {
     }
 }
 
+class MockImageListViewModel: ImageListViewModelInterface {
+    @Published var classifiedImages: [String: (UIImage, String?)] = [
+        "mock1": (UIImage(systemName: "photo")!, "Mock Label 1"),
+        "mock2": (UIImage(systemName: "photo")!, nil)
+    ]
+
+    @Published var imageProgress: [String: Double] = [
+        "mock1": 0.6,
+        "mock2": 1.0
+    ]
+
+    func loadSampleImages() {}
+}
 
 #Preview {
-    ImageListView()
+    ImageListView {
+        MockImageListViewModel()
+    }
 }

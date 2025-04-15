@@ -8,11 +8,11 @@
 import UIKit
 
 // MARK: - ImageDownloadManager (Manages parallel downloads using TaskGroup)
-class ImageDownloadManager {
+class ImageDownloadManager: ImageDownloadManagerInterface {
     let cache = ImageCacheActor()
-    private let classifier: ImageClassifying
+    private let classifier: ImageClassifierInterface
 
-    init(classifier: ImageClassifying) {
+    init(classifier: ImageClassifierInterface) {
         self.classifier = classifier
     }
 

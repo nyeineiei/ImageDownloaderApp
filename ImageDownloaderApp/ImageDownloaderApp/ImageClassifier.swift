@@ -10,11 +10,7 @@ import Vision
 import CoreML
 import UIKit
 
-protocol ImageClassifying {
-    func classify(_ image: UIImage) async throws -> String?
-}
-
-final class ImageClassifier: ImageClassifying {
+final class ImageClassifier: ImageClassifierInterface {
     private let model: VNCoreMLModel
     
     init() {
