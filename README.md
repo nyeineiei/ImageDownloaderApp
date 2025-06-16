@@ -1,14 +1,19 @@
-# ImageDownloaderApp
-Concurrent Image Downloader. A SwiftUI-based image downloader app that demonstrates Swift Concurrency, memory management, and UI updates with progress indicators while fetching images from URLs.
+# ConcurrentImageDownloaderApp + Smart Receipt Scanner
+A SwiftUI-based iOS app demonstrating parallel image downloading, memory-safe caching, and Core ML-powered on-device image classification. It includes two features:
+
+1. **ConcurrentImageDownloader** – showcasing Swift Concurrency, caching, and progress handling
+2. **Smart Receipt Scanner** – an on-device AI feature using Core ML and Vision to classify receipt content
 
 
 # Overview
-This project demonstrates the following key concepts:
-* Concurrent image downloading with TaskGroup
-* Image caching with actor for thread safety
-* Memory management with careful deallocation of images
-* Real-time progress tracking for each image download
-* SwiftUI integration to display images with progress indicators
+This project demonstrates:
+
+* Parallel image downloading with `TaskGroup`
+* Real-time progress tracking for each image
+* Caching via `NSCache` managed by `actor`
+* MVVM architecture with protocol-based Dependency Injection (DI)
+* AI classification using **Vision** + **Core ML**
+* On-device text classification for receipts (Smart Receipt Scanner)
 
 # Features
 * Download multiple images concurrently and display them in a list.
@@ -79,16 +84,40 @@ Images are cached to avoid re-downloading them every time.
 ### Progress Handling:  
 The download progress for each image is updated dynamically using a closure. This allows real-time feedback to the user.
 
+## Key Files to Review
+
+| File                                   | Purpose                                                 |
+|----------------------------------------|----------------------------------------------------------|
+| `ImageListViewModel.swift`             | Handles download logic and progress tracking             |
+| `ImageDownloadManager.swift`           | Uses TaskGroup to download/categorize/cache images       |
+| `ImageClassifier.swift`                | Classifies downloaded images using Vision + Core ML      |
+| `ReceiptScannerViewModel.swift`        | (Smart Receipt) Handles receipt OCR and category mapping |
+| `ImageListView.swift`                  | UI with SwiftUI + progress bars                          |
+| `AIClassifierModel.mlmodel`            | Pretrained model used for image classification           |
+
 ### Technologies Used
-Swift 5.5+  
-SwiftUI  
-Combine for reactive programming.  
-URLSession for networking.  
-Concurrency: TaskGroup, CheckedContinuation, actor, async/await.  
-NSCache for caching images.
-Core ML for running a pre-trained image classification model on-device.
-Vision for easily work with Core ML models for images.
-MLModel – Likely use Apple’s MobileNetV2 or similar for classification.
+- Swift 5.5+
+- SwiftUI
+- Combine (for reactive flow)
+- TaskGroup, async/await, CheckedContinuation
+- NSCache + actor for concurrency-safe caching
+- Core ML (e.g. MobileNetV2)
+- Vision framework (VNCoreMLRequest)
+- Protocol-based DI for testability
+
+## 🌱 Future Improvements
+
+- Add disk-based image cache
+- Expand classification filtering and receipt understanding
+- Add retry and cancellation to image downloads
+- Improve empty/loading/error UI states
+- Write more UI and integration tests
+
+## 🔐 Security & Privacy Practices
+
+- On-device AI with Core ML ensures user privacy
+- No network model inference — all classification runs locally
+- No sensitive data is stored; ephemeral image handling
 
 ### Author  
 Nyein  
