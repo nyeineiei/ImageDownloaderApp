@@ -20,7 +20,6 @@ This project demonstrates:
 * Show a loading progress bar for each image while downloading.
 * Cache images with thread-safe actor to improve performance.
 * Handle proper memory management to avoid memory leaks.
-* Integrate AI-powered image search for the downloaded Images to allow user to search using keywords like "human", "tree", "car", etc.
 
 # Requirements
 * iOS 15.0+
