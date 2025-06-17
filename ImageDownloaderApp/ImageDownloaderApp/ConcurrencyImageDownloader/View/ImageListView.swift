@@ -15,15 +15,12 @@ struct ImageListView<ViewModel: ImageListViewModelInterface>: View {
     init(viewModelFactory: @escaping () -> ViewModel) {
         _viewModel = StateObject(wrappedValue: viewModelFactory())
     }
-    
-    // Use the same URLs used in ViewModel
-    private let urls = (1...10).compactMap { URL(string: "https://picsum.photos/2000/1500?random=\($0)") }
 
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack(spacing: 16) {
-                    ForEach(urls, id: \.absoluteString) { url in
+                    ForEach(viewModel.imageURLs, id: \.absoluteString) { url in
                         VStack(alignment: .leading, spacing: 8) {
                             if let (image, label) = viewModel.classifiedImages[url.absoluteString] {
                                 Image(uiImage: image)
@@ -37,6 +34,7 @@ struct ImageListView<ViewModel: ImageListViewModelInterface>: View {
                                     .foregroundColor(label != nil ? .gray : .red)
                             } else {
                                 ProgressView(value: viewModel.imageProgress[url.absoluteString] ?? 0)
+                                    .animation(.linear, value: viewModel.imageProgress[url.absoluteString] ?? 0)
                                     .progressViewStyle(LinearProgressViewStyle())
                                     .accentColor(.blue)
                                     .frame(height: 5)
@@ -50,12 +48,16 @@ struct ImageListView<ViewModel: ImageListViewModelInterface>: View {
             .navigationTitle("Image Downloader")
         }
         .onAppear {
-            viewModel.loadSampleImages()
+            Task {
+                await viewModel.loadSampleImages()
+            }
         }
     }
 }
 
 class MockImageListViewModel: ImageListViewModelInterface {
+    var imageURLs: [URL] = []
+    
     @Published var classifiedImages: [String: (UIImage, String?)] = [
         "mock1": (UIImage(systemName: "photo")!, "Mock Label 1"),
         "mock2": (UIImage(systemName: "photo")!, nil)

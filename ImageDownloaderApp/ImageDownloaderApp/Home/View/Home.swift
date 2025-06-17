@@ -19,13 +19,14 @@ struct HomeView: View {
                     }
                 }
 
-                NavigationLink("🏷️ Image Tag Auto Detector") {
-                    TagDetectionView(
-                        viewModel: TagDetectionViewModel(
-                            detector: ImageTagDetector()!
-                        )
-                    )
-                }
+                ///WIP
+//                NavigationLink("🏷️ Image Tag Auto Detector") {
+//                    TagDetectionView(
+//                        viewModel: TagDetectionViewModel(
+//                            detector: ImageTagDetector()!
+//                        )
+//                    )
+//                }
                 
                 NavigationLink("🔍 Smart Receipt Scanner") {
                     ReceiptScannerView()

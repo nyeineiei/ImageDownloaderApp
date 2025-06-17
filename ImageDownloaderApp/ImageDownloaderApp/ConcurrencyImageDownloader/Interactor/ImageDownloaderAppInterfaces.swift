@@ -18,6 +18,7 @@ protocol ImageClassifierInterface {
 protocol ImageListViewModelInterface: ObservableObject {
     var classifiedImages: [String: (UIImage, String?)] { get set }
     var imageProgress: [String: Double] { get set }
+    var imageURLs: [URL] { get set }
 
-    func loadSampleImages()
+    func loadSampleImages() async
 }

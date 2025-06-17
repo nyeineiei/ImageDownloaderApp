@@ -50,6 +50,78 @@
             endingLineNumber = "38"
             landmarkName = "handlePhotoSelection(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD5A7CB5-5F5F-45B6-AFFB-5F2235E19076 - b4a7a03957dbaba0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "DD5A7CB5-5F5F-45B6-AFFB-5F2235E19076 - 5e18e9dc180a8269"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "DD5A7CB5-5F5F-45B6-AFFB-5F2235E19076 - e51c2388f4d59762"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "DD5A7CB5-5F5F-45B6-AFFB-5F2235E19076 - 8ec0e34f44567103"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "DD5A7CB5-5F5F-45B6-AFFB-5F2235E19076 - 1674a30615d75324"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,6 +138,36 @@
             endingLineNumber = "31"
             landmarkName = "handlePhotoSelection(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46645B32-469A-443A-91D8-927CF1643B57 - b4a7a03957dbaa59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31">
+               </Location>
+               <Location
+                  uuid = "46645B32-469A-443A-91D8-927CF1643B57 - 8ec0e34f445670fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,6 +184,50 @@
             endingLineNumber = "26"
             landmarkName = "handlePhotoSelection(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BC42C18-D3E5-4E1C-9970-939B836FE654 - 8a4f20aa36d9ed7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "4BC42C18-D3E5-4E1C-9970-939B836FE654 - b4a7a03957dba934"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+               <Location
+                  uuid = "4BC42C18-D3E5-4E1C-9970-939B836FE654 - 8ec0e34f44567397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -98,6 +244,50 @@
             endingLineNumber = "22"
             landmarkName = "handlePhotoSelection(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "508D94F6-42DF-4073-9FB5-152DE6055CE4 - 8a4f20aa36d9edfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "508D94F6-42DF-4073-9FB5-152DE6055CE4 - b4a7a03957dba9b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+               <Location
+                  uuid = "508D94F6-42DF-4073-9FB5-152DE6055CE4 - 8ec0e34f44567313"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for ImageDownloaderApp.TagDetectionViewModel.handlePhotoSelection(Swift.Optional&lt;_PhotosUI_SwiftUI.PhotosPickerItem&gt;) async -&gt; ()"
+                  moduleName = "ImageDownloaderApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nyeineieitun/Documents/iOS%20Projects/ImageDownloaderApp/ImageDownloaderApp/ImageDownloaderApp/TagDetection/ViewModel/TagDetectionViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
