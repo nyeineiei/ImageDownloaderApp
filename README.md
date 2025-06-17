@@ -1,5 +1,5 @@
 # ConcurrentImageDownloaderApp + Smart Receipt Scanner
-A SwiftUI-based iOS app demonstrating parallel image downloading, memory-safe caching, and Core ML-powered on-device image classification. It includes two features:
+A SwiftUI-based iOS app demonstrating parallel image downloading, memory-safe caching, and Core ML-powered on-device Smart Receipt Scanner. It includes two features:
 
 1. **ConcurrentImageDownloader** – showcasing Swift Concurrency, caching, and progress handling
 2. **Smart Receipt Scanner** – an on-device AI feature using Core ML and Vision to classify receipt content
@@ -20,6 +20,7 @@ This project demonstrates:
 * Show a loading progress bar for each image while downloading.
 * Cache images with thread-safe actor to improve performance.
 * Handle proper memory management to avoid memory leaks.
+* Scan the uploaded receipts and categorize them items
 
 # Requirements
 * iOS 15.0+
@@ -38,6 +39,9 @@ This project demonstrates:
 
   4. Progress Handling UI  
       Each image download shows a real-time progress bar. The progress is updated dynamically as the image is being downloaded using the onProgress closure.
+     
+  6. On-device Model usage with Custom trained dataset
+      Each image download shows a real-time progress bar. The progress is updated dynamically as the image is being downloaded using the onProgress closure.
 
 # Getting Started
 ### Installation  
@@ -48,16 +52,19 @@ This project demonstrates:
     Running the App
     Launch the app.
 
-The app will start downloading random images from an API (https://picsum.photos) and display them in a list.
+### User Guide  
+The app will show the list for the features availables: ConcurrentImageDownloaderApp + Smart Receipt Scanner
+Select the feature and explore :)
+The app will start downloading random images from an API (https://picsum.photos) and display them in a list. (ConcurrentImageDownloaderApp)
+A progress bar will show the download progress for each image in real-time. (ConcurrentImageDownloaderApp)
+Upload the image and wait the categorized results (Smart Receipt Scanner)
 
-A progress bar will show the download progress for each image in real-time.
-
-# Project Structure
+# Project Structure for Concurrency Image Downloader
 * ImageDownloader.swift: Contains the logic for downloading images using URLSession and managing download progress.
 * ImageDownloadManager.swift: Manages concurrent downloads using TaskGroup and stores images in an NSCache.
 * ImageListViewModel.swift: View model for managing image downloads and tracking progress.
 * ImageListView.swift: SwiftUI view for displaying images and their download progress.
-* ConcurrentImageDownloaderApp.swift: Entry point for the app, responsible for setting up the root view.
+* Home.swift: Entry point for the app, responsible for setting up the root view.
 
 # Design Decisions
 ### Concurrency:  
@@ -85,7 +92,7 @@ The download progress for each image is updated dynamically using a closure. Thi
 
 ## Key Files to Review
 
-| File                                   | Purpose                                                 |
+| File                                   | Purpose                                                  |
 |----------------------------------------|----------------------------------------------------------|
 | `ImageListViewModel.swift`             | Handles download logic and progress tracking             |
 | `ImageDownloadManager.swift`           | Uses TaskGroup to download/categorize/cache images       |
@@ -93,6 +100,8 @@ The download progress for each image is updated dynamically using a closure. Thi
 | `ReceiptScannerViewModel.swift`        | (Smart Receipt) Handles receipt OCR and category mapping |
 | `ImageListView.swift`                  | UI with SwiftUI + progress bars                          |
 | `AIClassifierModel.mlmodel`            | Pretrained model used for image classification           |
+| `ImageCacheActor.swift`                | Thread safe Cache                                        |
+| `ImageDownloader.swift`                | Low level URLSession class for downloading image         |
 
 ### Technologies Used
 - Swift 5.5+
