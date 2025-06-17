@@ -23,8 +23,8 @@ This project demonstrates:
 * Scan the uploaded receipts and categorize them items
 
 # Requirements
-* iOS 15.0+
-* Xcode 13.0+
+* iOS 17.6+
+* Xcode 16.2+
 
 # Key Concepts Implemented
   1. Concurrency Handling  
